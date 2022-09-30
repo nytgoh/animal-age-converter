@@ -1,0 +1,229 @@
+body {
+  min-width: 400px;
+  margin-top: 100px;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e8dccd;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Headers/General Stuff */
+
+#innerHeader {
+  text-align: center;
+  font-family: Cambria, Georgia, serif; 
+  color: #615047;
+}
+
+h1 {
+  font-size:  40px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size:  30px;
+}
+
+#innerBody {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+p {
+  text-align: center;
+  font-family: Cambria, Georgia, serif; 
+  color: #50423a;
+}
+
+/* Inputs */
+
+input {
+  display: block;
+  box-sizing: border-box;
+  font-family: Cambria, Georgia, serif; 
+  color: #50423a;
+}
+
+input:focus, select:focus{
+  outline: none;
+}
+
+input[type="text"]{
+  background-color : #fce3c3; 
+  border-width: 0px;
+  width: 300px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 0 auto;
+  font-size: 28px;
+  text-align: center;
+  box-shadow: inset 0 0 0 3px #876e4e, inset 0 15px 0 15px #fce3c3;
+}
+
+input[type="submit"] {
+  font-size: 24px;
+  width: 150px;
+  margin: 0 auto;
+  box-shadow: inset 0 0 0 3px #876e4e, inset 0 25px 0 25px #e8dccd;
+  border-radius: 10px;
+  border-width: 0px;
+  padding: 10px 0px;
+}
+
+select {
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+  font-family: Cambria, Georgia, serif; 
+  border: none;
+  background-color: transparent;
+  font-size:  26px;
+  text-align: center;
+  color: #50423a;
+}
+
+/* Image handling */
+
+img {
+  position:absolute;
+}
+
+.flipped {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.back {
+  z-index: -1;
+}
+
+/* Arrow */
+
+#arrow {
+  height: 60px;
+  top: 470px;
+  left: 49%;
+}
+
+/* -> Animal 1 positioning */
+
+#animal1{
+  margin: 100px 0px;
+  width: 400px;
+  z-index: -2;
+}
+
+#animal1 > #rabbitImg {
+  height: 150px;
+  top: 290px;
+  left: min( calc(55vw - 240px) , 520px );
+}
+
+#animal1 > #humanImg {
+  height: 220px;
+  top: 275px;
+  left: min( calc(55vw - 250px) , 550px );
+}
+
+#animal1 > #catImg {
+  height: 170px;
+  top: 295px;
+  left: min( calc(55vw - 200px) , 550px );
+}
+
+#animal1 > #dogImg {
+  height: 170px;
+  top: 310px;
+  left: min( calc(55vw - 250px) , 550px );
+}
+
+#animal1 > #pigImg {
+  height: 100px;
+  top: 340px;
+  left: min( calc(55vw - 260px) , 550px );
+}
+
+#animal1 > #horseImg {
+  height: 170px;
+  top: 320px;
+  left: min( calc(55vw - 220px) , 550px );
+}
+
+#animal1 > #monkeyImg {
+  height: 210px;
+  top: 300px;
+  left: min( calc(45vw - 220px) , 550px );
+}
+
+#animal1 > #hamsterImg {
+  height: 50px;
+  top: 350px;
+  left: min( calc(45vw - 130px) , 550px );
+}
+
+
+/* -> Animal 2 positioning */
+
+#animal2{
+  margin: 100px 0px;
+  width: 400px;
+}
+
+#animal2 > #rabbitImg {
+  height: 150px;
+  top: 490px;
+  right: min( calc(55vw - 240px) , 520px );
+}
+
+#animal2 > #humanImg {
+  height: 220px;
+  top: 470px;
+  right: min( calc(55vw - 250px) , 550px );
+}
+
+#animal2 > #catImg {
+  height: 170px;
+  top: 487px;
+  right: min( calc(55vw - 200px) , 550px );
+}
+
+#animal2 > #dogImg {
+  height: 170px;
+  top: 510px;
+  right: min( calc(55vw - 240px) , 550px );
+}
+
+#animal2 > #pigImg {
+  height: 100px;
+  top: 530px;
+  right: min( calc(55vw - 260px) , 550px );
+}
+
+#animal2 > #horseImg {
+  height: 170px;
+  top: 510px;
+  right: min( calc(55vw - 220px) , 550px );
+}
+
+#animal2 > #monkeyImg {
+  height: 210px;
+  top: 495px;
+  right: min( calc(45vw - 220px) , 550px );
+}
+
+#animal2 > #hamsterImg {
+  height: 50px;
+  top: 545px;
+  right: min( calc(45vw - 130px) , 550px );
+}
+

@@ -1,0 +1,15 @@
+{
+  "short_name": "Animal Age Calculator",
+  "name": "Animal to Animal Age Converter",
+  "icons": [
+    {
+      "src": "rabbit.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
