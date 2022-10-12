@@ -19,13 +19,6 @@ namespace animal_age_converter_backEnd.Controllers
             { "hamster", 20 }
         };
 
-        private readonly ILogger<AnimalAgeController> _logger;
-
-        public AnimalAgeController(ILogger<AnimalAgeController> logger)
-        {
-            _logger = logger;
-        }
-
         /*  ----------------------------------------------
          *  Convert animal 1's age in years, to animal 2
          *  ----------------------------------------------
