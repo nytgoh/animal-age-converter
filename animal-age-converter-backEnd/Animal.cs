@@ -1,4 +1,4 @@
-﻿namespace animal_age_converter_backEnd
+namespace animal_age_converter_backEnd
 {
     public class Animal
     {
