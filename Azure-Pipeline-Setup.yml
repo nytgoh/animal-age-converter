@@ -1,0 +1,58 @@
+trigger:
+  branches:
+    include:
+    - main
+resources:
+  repositories:
+  - repository: self
+    type: git
+    ref: refs/heads/main
+jobs:
+- job: Job_1
+  displayName: Agent job 1
+  pool:
+    vmImage: windows-2019
+  steps:
+  - checkout: self
+    clean: true
+    fetchTags: false
+  - task: UseDotNet@2
+    displayName: Use .NET Core sdk 6.0.300
+    inputs:
+      version: 6.0.300
+  - task: Npm@1
+    displayName: npm install
+    inputs:
+      workingDir: animal-age-converter-frontend
+      verbose: false
+  - task: Npm@1
+    displayName: npm run build
+    inputs:
+      command: custom
+      workingDir: animal-age-converter-frontend
+      verbose: false
+      customCommand: run build
+  - task: CmdLine@2
+    displayName: Command Line Script mv
+    inputs:
+      script: mv animal-age-converter-frontend\build animal-age-converter-backEnd\wwwroot
+  - task: DotNetCoreCLI@2
+    displayName: dotnet restore
+    inputs:
+      command: restore
+      projects: animal-age-converter-backend\animal-age-converter-backEnd.csproj
+  - task: DotNetCoreCLI@2
+    displayName: dotnet build
+    inputs:
+      projects: animal-age-converter-backend\animal-age-converter-backEnd.csproj
+  - task: DotNetCoreCLI@2
+    displayName: dotnet publish
+    inputs:
+      command: publish
+      arguments: -c Release -o $(Build.ArtifactStagingDirectory)/publish
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: animal-age-converter-backEnd'
+    inputs:
+      PathtoPublish: $(Build.ArtifactStagingDirectory)\publish
+      ArtifactName: animal-age-converter-backEnd
+...
