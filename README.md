@@ -3,6 +3,8 @@ A simple app that can be used to compare the ages of a set list of animals. Made
 
 The design was done as part of the #DailyUI challenge, you can see more designs I've done for this challenge in another repository: https://github.com/nytgoh/DailyUI-Challenge
 
+Needs some tweaking in terms of css layout/scaling for mobile.
+
 ## How to run it
 ### Hosted Site
 This project has been deployed through Azure. You can view the site here: https://animal-age-converter.azurewebsites.net. The yaml file for the pipeline used has been included in the repo.
