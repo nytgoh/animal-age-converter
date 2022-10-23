@@ -20,12 +20,12 @@ code {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #innerBody {
@@ -103,7 +103,7 @@ img {
 
 #arrow {
     height: 60px;
-    top: 470px;
+    top: 450px;
     left: 49%;
 }
 
@@ -117,48 +117,48 @@ img {
 
     #animal1 > #rabbitImg {
         height: 150px;
-        top: 290px;
+        top: 270px;
         left: min( calc(55vw - 240px), 520px );
     }
 
     #animal1 > #humanImg {
         height: 220px;
-        top: 275px;
+        top: 255px;
         left: min( calc(55vw - 250px), 550px );
     }
 
     #animal1 > #catImg {
         height: 170px;
-        top: 295px;
+        top: 275px;
         left: min( calc(55vw - 200px), 550px );
     }
 
     #animal1 > #dogImg {
-        height: 170px;
+        height: 150px;
         top: 310px;
         left: min( calc(55vw - 250px), 550px );
     }
 
     #animal1 > #pigImg {
-        height: 100px;
+        height: 80px;
         top: 340px;
         left: min( calc(55vw - 260px), 550px );
     }
 
     #animal1 > #horseImg {
-        height: 170px;
+        height: 150px;
         top: 320px;
         left: min( calc(55vw - 220px), 550px );
     }
 
     #animal1 > #monkeyImg {
-        height: 210px;
+        height: 190px;
         top: 300px;
         left: min( calc(45vw - 220px), 550px );
     }
 
     #animal1 > #hamsterImg {
-        height: 50px;
+        height: 30px;
         top: 350px;
         left: min( calc(45vw - 130px), 550px );
     }
@@ -173,48 +173,48 @@ img {
 
     #animal2 > #rabbitImg {
         height: 150px;
-        top: 490px;
+        top: 470px;
         right: min( calc(55vw - 240px), 520px );
     }
 
     #animal2 > #humanImg {
         height: 220px;
-        top: 470px;
+        top: 450px;
         right: min( calc(55vw - 250px), 550px );
     }
 
     #animal2 > #catImg {
         height: 170px;
-        top: 487px;
+        top: 467px;
         right: min( calc(55vw - 200px), 550px );
     }
 
     #animal2 > #dogImg {
         height: 170px;
-        top: 510px;
+        top: 490px;
         right: min( calc(55vw - 240px), 550px );
     }
 
     #animal2 > #pigImg {
         height: 100px;
-        top: 530px;
+        top: 510px;
         right: min( calc(55vw - 260px), 550px );
     }
 
     #animal2 > #horseImg {
         height: 170px;
-        top: 510px;
+        top: 490px;
         right: min( calc(55vw - 220px), 550px );
     }
 
     #animal2 > #monkeyImg {
         height: 210px;
-        top: 495px;
+        top: 475px;
         right: min( calc(45vw - 220px), 550px );
     }
 
     #animal2 > #hamsterImg {
         height: 50px;
-        top: 545px;
+        top: 525px;
         right: min( calc(45vw - 130px), 550px );
     }
